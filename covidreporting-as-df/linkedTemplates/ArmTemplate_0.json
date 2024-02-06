@@ -33,11 +33,11 @@
 		},
 		"tr_ingest_hospital_admission_csv_http_properties_pl_ingest_http_csv_data_parameters_sourceFileName": {
 			"type": "string",
-			"defaultValue": "hospital_admissions"
+			"defaultValue": "hospital_admissions.csv"
 		},
 		"tr_ingest_hospital_admission_csv_http_properties_pl_ingest_http_csv_data_parameters_sinkFileName": {
 			"type": "string",
-			"defaultValue": "hospital_admissions"
+			"defaultValue": "hospital_admissions.csv"
 		},
 		"tr_ingest_population_data_properties_typeProperties_scope": {
 			"type": "string",
@@ -580,7 +580,7 @@
 					"recurrence": {
 						"frequency": "Day",
 						"interval": 1,
-						"startTime": "2024-02-04T03:50:00",
+						"startTime": "2024-02-03T04:00:00",
 						"endTime": "2024-02-07T08:35:00",
 						"timeZone": "Eastern Standard Time"
 					}
