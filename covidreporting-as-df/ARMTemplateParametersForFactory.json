@@ -17,18 +17,6 @@
 		"ls_http_opendata_ecdc_europe_eu_properties_typeProperties_url": {
 			"value": "@{linkedService().baseURL}"
 		},
-		"tr_ingest_cases_deaths_csv_http_properties_pl_ingest_http_csv_data_parameters_sourceFileName": {
-			"value": "cases_deaths.csv"
-		},
-		"tr_ingest_cases_deaths_csv_http_properties_pl_ingest_http_csv_data_parameters_sinkFileName": {
-			"value": "cases_deaths.csv"
-		},
-		"tr_ingest_hospital_admission_csv_http_properties_pl_ingest_http_csv_data_parameters_sourceFileName": {
-			"value": "hospital_admissions.csv"
-		},
-		"tr_ingest_hospital_admission_csv_http_properties_pl_ingest_http_csv_data_parameters_sinkFileName": {
-			"value": "hospital_admissions.csv"
-		},
 		"tr_ingest_population_data_properties_typeProperties_scope": {
 			"value": "/subscriptions/d1f265b3-0ce4-4169-83c0-567241f6a78d/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/blobstorageaccountas"
 		}

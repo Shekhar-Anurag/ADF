@@ -23,22 +23,6 @@
 			"type": "string",
 			"defaultValue": "@{linkedService().baseURL}"
 		},
-		"tr_ingest_cases_deaths_csv_http_properties_pl_ingest_http_csv_data_parameters_sourceFileName": {
-			"type": "string",
-			"defaultValue": "cases_deaths.csv"
-		},
-		"tr_ingest_cases_deaths_csv_http_properties_pl_ingest_http_csv_data_parameters_sinkFileName": {
-			"type": "string",
-			"defaultValue": "cases_deaths.csv"
-		},
-		"tr_ingest_hospital_admission_csv_http_properties_pl_ingest_http_csv_data_parameters_sourceFileName": {
-			"type": "string",
-			"defaultValue": "hospital_admissions.csv"
-		},
-		"tr_ingest_hospital_admission_csv_http_properties_pl_ingest_http_csv_data_parameters_sinkFileName": {
-			"type": "string",
-			"defaultValue": "hospital_admissions.csv"
-		},
 		"tr_ingest_population_data_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/d1f265b3-0ce4-4169-83c0-567241f6a78d/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/blobstorageaccountas"
@@ -81,18 +65,6 @@
 					},
 					"ls_http_opendata_ecdc_europe_eu_properties_typeProperties_url": {
 						"value": "[parameters('ls_http_opendata_ecdc_europe_eu_properties_typeProperties_url')]"
-					},
-					"tr_ingest_cases_deaths_csv_http_properties_pl_ingest_http_csv_data_parameters_sourceFileName": {
-						"value": "[parameters('tr_ingest_cases_deaths_csv_http_properties_pl_ingest_http_csv_data_parameters_sourceFileName')]"
-					},
-					"tr_ingest_cases_deaths_csv_http_properties_pl_ingest_http_csv_data_parameters_sinkFileName": {
-						"value": "[parameters('tr_ingest_cases_deaths_csv_http_properties_pl_ingest_http_csv_data_parameters_sinkFileName')]"
-					},
-					"tr_ingest_hospital_admission_csv_http_properties_pl_ingest_http_csv_data_parameters_sourceFileName": {
-						"value": "[parameters('tr_ingest_hospital_admission_csv_http_properties_pl_ingest_http_csv_data_parameters_sourceFileName')]"
-					},
-					"tr_ingest_hospital_admission_csv_http_properties_pl_ingest_http_csv_data_parameters_sinkFileName": {
-						"value": "[parameters('tr_ingest_hospital_admission_csv_http_properties_pl_ingest_http_csv_data_parameters_sinkFileName')]"
 					},
 					"tr_ingest_population_data_properties_typeProperties_scope": {
 						"value": "[parameters('tr_ingest_population_data_properties_typeProperties_scope')]"
