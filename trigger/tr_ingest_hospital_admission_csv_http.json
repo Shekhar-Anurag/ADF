@@ -1,9 +1,20 @@
 {
-	"name": "tr_ingest_csv_http",
+	"name": "tr_ingest_hospital_admission_csv_http",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [],
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_http_csv_data",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"sourceFileName": "hospital_admissions",
+					"sinkFileName": "hospital_admissions"
+				}
+			}
+		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
