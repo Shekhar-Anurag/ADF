@@ -20,7 +20,7 @@
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2024-02-04T03:47:00",
+				"startTime": "2024-02-04T03:50:00",
 				"endTime": "2024-02-07T08:35:00",
 				"timeZone": "Eastern Standard Time"
 			}
