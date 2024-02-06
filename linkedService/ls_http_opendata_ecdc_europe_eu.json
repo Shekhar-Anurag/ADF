@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://github.com/Shekhar-Anurag/ADF/tree/main/covid_data/",
+			"url": "https://drive.google.com/drive/folders/1iDb8o5eYlXCA7URP0L-laMiFWp3AOZw4?usp=drive_link/",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
