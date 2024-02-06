@@ -15,7 +15,7 @@
 			"value": "https://dlaccountas.dfs.core.windows.net/"
 		},
 		"ls_http_opendata_ecdc_europe_eu_properties_typeProperties_url": {
-			"value": "https://ecdc.blob.core.windows.net/covid19/"
+			"value": "@{linkedService().baseURL}"
 		},
 		"tr_ingest_cases_deaths_csv_http_properties_pl_ingest_http_csv_data_parameters_sourceFileName": {
 			"value": "cases_deaths.csv"
