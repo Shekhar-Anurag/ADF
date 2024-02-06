@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://github.com/Shekhar-Anurag/ADF/tree/main/covid_data/cases_deaths.csv",
+			"url": "https://github.com/Shekhar-Anurag/ADF/tree/main/covid_data/",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
