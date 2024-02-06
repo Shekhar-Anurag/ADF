@@ -2,16 +2,12 @@
 	"name": "tr_ingest_cases_deaths_csv_http",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
 					"referenceName": "pl_ingest_http_csv_data",
 					"type": "PipelineReference"
-				},
-				"parameters": {
-					"sourceFileName": "cases_deaths.csv",
-					"sinkFileName": "cases_deaths.csv"
 				}
 			}
 		],
