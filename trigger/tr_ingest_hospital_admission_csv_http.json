@@ -10,8 +10,8 @@
 					"type": "PipelineReference"
 				},
 				"parameters": {
-					"sourceFileName": "hospital_admissions",
-					"sinkFileName": "hospital_admissions"
+					"sourceFileName": "hospital_admissions.csv",
+					"sinkFileName": "hospital_admissions.csv"
 				}
 			}
 		],
