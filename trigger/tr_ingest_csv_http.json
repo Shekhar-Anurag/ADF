@@ -1,5 +1,5 @@
 {
-	"name": "tr_",
+	"name": "tr_ingest_csv_http",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
