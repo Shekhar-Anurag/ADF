@@ -1,6 +1,9 @@
 {
 	"name": "df_transform_testing_data",
 	"properties": {
+		"folder": {
+			"name": "Covid"
+		},
 		"type": "MappingDataFlow",
 		"typeProperties": {
 			"sources": [

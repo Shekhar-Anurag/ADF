@@ -5,6 +5,9 @@
 			"referenceName": "ls_ablob_covidreportingsa",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Covid/Azure Storage"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

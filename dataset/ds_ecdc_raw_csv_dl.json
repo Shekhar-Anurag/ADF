@@ -10,6 +10,9 @@
 				"type": "string"
 			}
 		},
+		"folder": {
+			"name": "Covid/Azure Storage"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

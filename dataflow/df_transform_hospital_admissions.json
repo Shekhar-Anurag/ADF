@@ -1,6 +1,9 @@
 {
 	"name": "df_transform_hospital_admissions",
 	"properties": {
+		"folder": {
+			"name": "Covid"
+		},
 		"type": "MappingDataFlow",
 		"typeProperties": {
 			"sources": [
