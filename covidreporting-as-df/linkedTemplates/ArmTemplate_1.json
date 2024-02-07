@@ -25,6 +25,9 @@
 					"referenceName": "ls_assql_db",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Covid/Sql"
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [
@@ -80,6 +83,9 @@
 					"referenceName": "ls_assql_db",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Covid/Sql"
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [
@@ -134,6 +140,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_assql_db",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Covid/Sql"
 				},
 				"annotations": [],
 				"type": "AzureSqlTable",
@@ -329,6 +338,9 @@
 					"str": {
 						"type": "String"
 					}
+				},
+				"folder": {
+					"name": "Covid/Extract"
 				},
 				"annotations": []
 			},
@@ -531,6 +543,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Covid/Extract"
+				},
 				"annotations": [],
 				"lastPublishTime": "2024-02-06T03:43:26Z"
 			},
@@ -700,6 +715,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Covid/Load"
 				},
 				"annotations": []
 			},
@@ -871,6 +889,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Covid/Load"
 				},
 				"annotations": []
 			},
@@ -1067,6 +1088,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Covid/Load"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -1078,6 +1102,9 @@
 			"type": "Microsoft.DataFactory/factories/dataflows",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"folder": {
+					"name": "Covid"
+				},
 				"type": "MappingDataFlow",
 				"typeProperties": {
 					"sources": [
@@ -1205,6 +1232,9 @@
 			"type": "Microsoft.DataFactory/factories/dataflows",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"folder": {
+					"name": "Covid"
+				},
 				"type": "MappingDataFlow",
 				"typeProperties": {
 					"sources": [
@@ -1461,6 +1491,9 @@
 			"type": "Microsoft.DataFactory/factories/dataflows",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"folder": {
+					"name": "Covid"
+				},
 				"type": "MappingDataFlow",
 				"typeProperties": {
 					"sources": [
@@ -1637,6 +1670,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Covid/Transform"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -1686,6 +1722,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Covid/Transform"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -1733,6 +1772,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Covid/Transform"
 				},
 				"annotations": []
 			},

@@ -185,6 +185,9 @@
 						"type": "String"
 					}
 				},
+				"folder": {
+					"name": "Covid/Extract"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -390,6 +393,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Covid/Extract"
+				},
 				"annotations": [],
 				"lastPublishTime": "2024-02-06T03:43:26Z"
 			},
@@ -563,6 +569,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Covid/Load"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -734,6 +743,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Covid/Load"
 				},
 				"annotations": []
 			},
@@ -931,6 +943,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Covid/Load"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -978,6 +993,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Covid/Transform"
 				},
 				"annotations": []
 			},
@@ -1028,6 +1046,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Covid/Transform"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -1063,6 +1084,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Covid/Transform"
 				},
 				"annotations": []
 			},
@@ -1112,6 +1136,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Covid/Transform"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -1126,6 +1153,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_adls_covidreportingdl",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Covid/ADLS/lookup"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -1176,6 +1206,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_adls_covidreportingdl",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Covid/ADLS/lookup"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -1255,6 +1288,9 @@
 					"referenceName": "ls_ablob_covidreportingsa",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Covid/Azure Storage"
+				},
 				"annotations": [],
 				"type": "Json",
 				"typeProperties": {
@@ -1296,6 +1332,9 @@
 					"fileName": {
 						"type": "string"
 					}
+				},
+				"folder": {
+					"name": "Covid/Azure Storage"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -1343,6 +1382,9 @@
 						"type": "string"
 					}
 				},
+				"folder": {
+					"name": "Covid/Azure Storage"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
@@ -1372,6 +1414,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_ablob_covidreportingsa",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Covid/Azure Storage"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -1403,6 +1448,9 @@
 					"referenceName": "ls_adls_covidreportingdl",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Covid/ADLS/raw"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
@@ -1432,6 +1480,9 @@
 					"referenceName": "ls_adls_covidreportingdl",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Covid/ADLS/processed"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
@@ -1459,6 +1510,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_adls_covidreportingdl",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Covid/ADLS/processed"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -1488,6 +1542,9 @@
 					"referenceName": "ls_adls_covidreportingdl",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Covid/ADLS/processed"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
@@ -1516,6 +1573,9 @@
 					"referenceName": "ls_adls_covidreportingdl",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Covid/ADLS/processed"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
@@ -1543,6 +1603,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_adls_covidreportingdl",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Covid/ADLS/raw"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -1610,6 +1673,9 @@
 					"referenceName": "ls_adls_covidreportingdl",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Covid/ADLS/raw"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
@@ -1667,6 +1733,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_adls_covidreportingdl",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Covid/ADLS/raw"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -1734,6 +1803,9 @@
 					"referenceName": "ls_assql_db",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Covid/Sql"
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [
@@ -1791,6 +1863,9 @@
 					"referenceName": "ls_assql_db",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Covid/Sql"
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [
@@ -1847,6 +1922,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_assql_db",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Covid/Sql"
 				},
 				"annotations": [],
 				"type": "AzureSqlTable",
@@ -2051,6 +2129,9 @@
 			"type": "Microsoft.DataFactory/factories/dataflows",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"folder": {
+					"name": "Covid"
+				},
 				"type": "MappingDataFlow",
 				"typeProperties": {
 					"sources": [
@@ -2182,6 +2263,9 @@
 			"type": "Microsoft.DataFactory/factories/dataflows",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"folder": {
+					"name": "Covid"
+				},
 				"type": "MappingDataFlow",
 				"typeProperties": {
 					"sources": [
@@ -2444,6 +2528,9 @@
 			"type": "Microsoft.DataFactory/factories/dataflows",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"folder": {
+					"name": "Covid"
+				},
 				"type": "MappingDataFlow",
 				"typeProperties": {
 					"sources": [
