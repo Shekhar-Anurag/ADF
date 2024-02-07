@@ -180,6 +180,9 @@
 				]
 			}
 		],
+		"folder": {
+			"name": "Covid/Load"
+		},
 		"annotations": []
 	}
 }

@@ -162,6 +162,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -184,6 +185,9 @@
 				}
 			}
 		],
+		"folder": {
+			"name": "Covid/Extract"
+		},
 		"annotations": [],
 		"lastPublishTime": "2024-02-06T03:43:26Z"
 	},

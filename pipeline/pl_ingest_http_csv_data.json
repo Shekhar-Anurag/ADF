@@ -133,6 +133,9 @@
 				"type": "String"
 			}
 		},
+		"folder": {
+			"name": "Covid/Extract"
+		},
 		"annotations": []
 	}
 }
