@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_adls_covidreportingdl'"
 		},
+		"ls_assql_db_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_assql_db'"
+		},
 		"ls_covid_adb_accessToken": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accessToken' of 'ls_covid_adb'"
@@ -22,6 +26,10 @@
 		"ls_adls_covidreportingdl_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://dlaccountas.dfs.core.windows.net/"
+		},
+		"ls_covid_adb_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0207-085209-dn6m65n7"
 		},
 		"ls_http_opendata_ecdc_europe_eu_properties_typeProperties_url": {
 			"type": "string",
@@ -64,11 +72,17 @@
 					"ls_adls_covidreportingdl_accountKey": {
 						"value": "[parameters('ls_adls_covidreportingdl_accountKey')]"
 					},
+					"ls_assql_db_connectionString": {
+						"value": "[parameters('ls_assql_db_connectionString')]"
+					},
 					"ls_covid_adb_accessToken": {
 						"value": "[parameters('ls_covid_adb_accessToken')]"
 					},
 					"ls_adls_covidreportingdl_properties_typeProperties_url": {
 						"value": "[parameters('ls_adls_covidreportingdl_properties_typeProperties_url')]"
+					},
+					"ls_covid_adb_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('ls_covid_adb_properties_typeProperties_existingClusterId')]"
 					},
 					"ls_http_opendata_ecdc_europe_eu_properties_typeProperties_url": {
 						"value": "[parameters('ls_http_opendata_ecdc_europe_eu_properties_typeProperties_url')]"

@@ -11,11 +11,17 @@
 		"ls_adls_covidreportingdl_accountKey": {
 			"value": ""
 		},
+		"ls_assql_db_connectionString": {
+			"value": ""
+		},
 		"ls_covid_adb_accessToken": {
 			"value": ""
 		},
 		"ls_adls_covidreportingdl_properties_typeProperties_url": {
 			"value": "https://dlaccountas.dfs.core.windows.net/"
+		},
+		"ls_covid_adb_properties_typeProperties_existingClusterId": {
+			"value": "0207-085209-dn6m65n7"
 		},
 		"ls_http_opendata_ecdc_europe_eu_properties_typeProperties_url": {
 			"value": "@{linkedService().baseURL}"
