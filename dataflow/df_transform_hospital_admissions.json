@@ -29,17 +29,17 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "ds_processed_hospital_admissions_weekly",
-						"type": "DatasetReference"
-					},
-					"name": "sinkWeekly"
-				},
-				{
-					"dataset": {
 						"referenceName": "ds_processed_hospital_admissions_daily",
 						"type": "DatasetReference"
 					},
 					"name": "sinkDaily"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_processed_hospital_admissions_weekly",
+						"type": "DatasetReference"
+					},
+					"name": "sinkWeekly"
 				}
 			],
 			"transformations": [
@@ -71,19 +71,19 @@
 					"name": "pivotWeeklyIndicator"
 				},
 				{
-					"name": "select2"
-				},
-				{
 					"name": "pivotDAilyIndicator"
 				},
 				{
 					"name": "selectFinalDaily"
 				},
 				{
-					"name": "sortWeeklyDAta"
+					"name": "sortDailyData"
 				},
 				{
-					"name": "sortDailyData"
+					"name": "select2"
+				},
+				{
+					"name": "sortWeeklyData"
 				}
 			],
 			"scriptLines": [
@@ -186,22 +186,10 @@
 				"          source,",
 				"          week_start_date,",
 				"          week_end_date),",
-				"     pivotBy(indicator, ['Weekly new hospital admissions per 100K', 'Weekly new ICU admissions per 100K']),",
+				"     pivotBy(indicator, ['Weekly new hospital admissions per 100k', 'Weekly new ICU admissions per 100k']),",
 				"     total = sum(value),",
 				"     columnNaming: '$N-$V',",
 				"     lateral: true) ~> pivotWeeklyIndicator",
-				"pivotWeeklyIndicator select(mapColumn(",
-				"          country,",
-				"          country_code_2_digit,",
-				"          country_code_3_digit,",
-				"          population,",
-				"          reported_year_week,",
-				"          new_hospital_occupancy_count = {total-Weekly new hospital admissions per 100K},",
-				"          {new_ICU _occupancy_count} = {total-Weekly new ICU admissions per 100K},",
-				"          source",
-				"     ),",
-				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> select2",
 				"splitDailyAndweekly@Daily pivot(groupBy(country,",
 				"          country_code_2_digit,",
 				"          country_code_3_digit,",
@@ -224,24 +212,40 @@
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> selectFinalDaily",
-				"select2 sort(desc(reported_year_week, true),",
-				"     asc(country, true)) ~> sortWeeklyDAta",
 				"selectFinalDaily sort(desc(reported_date, true),",
 				"     asc(country, true)) ~> sortDailyData",
-				"sortWeeklyDAta sink(allowSchemaDrift: true,",
-				"     validateSchema: false,",
-				"     umask: 0022,",
-				"     preCommands: [],",
-				"     postCommands: [],",
+				"pivotWeeklyIndicator select(mapColumn(",
+				"          country,",
+				"          country_code_2_digit,",
+				"          country_code_3_digit,",
+				"          population,",
+				"          reported_year_week,",
+				"          week_start_date,",
+				"          week_end_date,",
+				"          new_hospital_occupancy_count = {total-Weekly new hospital admissions per 100k},",
+				"          new_ICU_occupancy_count = {total-Weekly new ICU admissions per 100k},",
+				"          source",
+				"     ),",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sinkWeekly",
+				"     skipDuplicateMapOutputs: true) ~> select2",
+				"select2 sort(desc(reported_year_week, true),",
+				"     asc(country, true)) ~> sortWeeklyData",
 				"sortDailyData sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     truncate: true,",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sinkDaily"
+				"     skipDuplicateMapOutputs: true) ~> sinkDaily",
+				"sortWeeklyData sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     truncate: true,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sinkWeekly"
 			]
 		}
 	}
